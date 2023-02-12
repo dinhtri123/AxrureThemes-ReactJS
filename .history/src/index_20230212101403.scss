@@ -98,30 +98,12 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
-  .banner {
-    max-height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  .banner-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .banner-right {
-    justify-content: center;
-  }
-  .banner-left p {
-    text-align:center;
-  }
   
 }
 
 @media screen and (max-width: 640px) {
   .container {
-    padding-left:30px;
-    padding-right:30px;
+    padding: 0px 30px;
   }
   .nav {
     gap: 20px;
@@ -132,7 +114,14 @@ body {
     padding: 50px 0px;
   }
   
-  
+  .banner-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-right {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -150,7 +139,7 @@ body {
     top: 0%;
     right: 0;
     bottom: 0;
-    width: 70%;
+    width: 60%;
     height: 100%;
     background-color: white;
     color: black;

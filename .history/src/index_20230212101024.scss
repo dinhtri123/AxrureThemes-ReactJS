@@ -73,10 +73,10 @@ body {
     display: flex;
     flex-direction: column;
   }
-.about2{
-  display:flex;
-  flex-direction: column-reverse;
-}
+  #about .about2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .title,
   .text {
     text-align: center;
@@ -84,9 +84,7 @@ body {
   .line {
     margin: auto;
   }
-  .banner-left p {
-    text-align:left;
-  }
+  .banner-left > 
 }
 
 @media screen and (max-width: 768px) {
@@ -97,6 +95,20 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 0px 30px;
+  }
+  .nav {
+    gap: 20px;
+  }
+  #pricing {
+    min-height: 900px;
+    height: 100%;
+    padding: 50px 0px;
   }
   .banner {
     max-height: auto;
@@ -112,27 +124,6 @@ body {
   .banner-right {
     justify-content: center;
   }
-  .banner-left p {
-    text-align:center;
-  }
-  
-}
-
-@media screen and (max-width: 640px) {
-  .container {
-    padding-left:30px;
-    padding-right:30px;
-  }
-  .nav {
-    gap: 20px;
-  }
-  #pricing {
-    min-height: 900px;
-    height: 100%;
-    padding: 50px 0px;
-  }
-  
-  
 }
 
 @media screen and (max-width: 500px) {
@@ -150,7 +141,7 @@ body {
     top: 0%;
     right: 0;
     bottom: 0;
-    width: 70%;
+    width: 60%;
     height: 100%;
     background-color: white;
     color: black;
